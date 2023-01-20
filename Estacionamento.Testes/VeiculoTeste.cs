@@ -40,5 +40,8 @@ namespace Estacionamento.Testes
             //Assert
             Assert.Equals(-150, veiculo.VelocidadeAtual);
         }
+
+
+        
     }
 }
