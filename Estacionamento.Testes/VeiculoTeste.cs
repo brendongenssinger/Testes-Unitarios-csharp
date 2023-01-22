@@ -20,7 +20,7 @@ namespace Estacionamento.Testes
             veiculo.Acelerar(10);
 
             //Assert
-            Assert.Equals(100, veiculo.VelocidadeAtual);
+            Assert.Equal(100, veiculo.VelocidadeAtual);
         }
 
         [Fact]
