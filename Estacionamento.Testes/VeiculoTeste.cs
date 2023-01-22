@@ -1,5 +1,4 @@
 using Estacionamento.Models;
-using NUnit.Framework;
 using Xunit;
 
 namespace Estacionamento.Testes
@@ -9,13 +8,9 @@ namespace Estacionamento.Testes
         //Arrange
         //Act
         //Assert 
-
-        [SetUp]
-        public void Setup()
-        {
-        }
       
-        [Fact]
+        [Fact(DisplayName ="Teste n 1")]
+        [Trait("Funcionalidade","Acelerar")]
         public void TestaVeiculoAcelerar()
         {
             //Arrange
@@ -29,6 +24,7 @@ namespace Estacionamento.Testes
         }
 
         [Fact]
+        [Trait("Funcionalidade", "Freiar")]
         public void TestaVeiculoFreiar()
         {
             //Arrange
@@ -38,10 +34,16 @@ namespace Estacionamento.Testes
             veiculo.Frear(15);
 
             //Assert
-            Assert.Equals(-150, veiculo.VelocidadeAtual);
+            Assert.Equal(-150, veiculo.VelocidadeAtual);
         }
 
 
-        
+        [Fact(DisplayName = "Teste n°3", Skip = "Teste ainda não implementado")]
+        public void ValidaNomeProprietario()
+        {
+            // Exemplo de utilização do Skip
+        }
+
+
     }
 }
