@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="D:\Code\Estudos_TestesUnitarios\Estacionamento\Estacionamento.csproj" />
+    <ProjectReference Include="..\Estacionamento.Modelos\Estacionamento.Modelos.csproj" />
   </ItemGroup>
 
 </Project>
