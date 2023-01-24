@@ -1,7 +1,4 @@
-﻿using Estacionamento.Models;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Estacionamento.Modelos;
 using Xunit;
 using Xunit.Abstractions;
 

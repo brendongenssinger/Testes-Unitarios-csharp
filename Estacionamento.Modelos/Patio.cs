@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-
+using System.Linq;
 namespace Estacionamento.Modelos
 {
     public class Patio
@@ -80,6 +80,24 @@ namespace Estacionamento.Modelos
             return informacao;
         }
 
+        public Veiculo  PesquisaVeiculo(string placa)
+        {
+            Veiculo encontrado = (from veiculo in Veiculos
+                              where veiculo.Placa == placa
+                              select veiculo).SingleOrDefault();
 
+            return encontrado;
+                              
+        }
+
+        public Veiculo AlterarDadosVeiculos(Veiculo veiculoAlterado)
+        {
+            var veiculoTemp = (from veiculo in Veiculos
+                               where veiculo.Placa == veiculoAlterado.Placa
+                               select veiculo).SingleOrDefault();
+
+            veiculoTemp.AlterarDados(veiculoAlterado);
+            return veiculoTemp;
+        }
     }
 }

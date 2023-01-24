@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Estacionamento.Models;
+﻿using Estacionamento.Modelos;
 using Xunit;
 
 namespace Estacionamento.Testes

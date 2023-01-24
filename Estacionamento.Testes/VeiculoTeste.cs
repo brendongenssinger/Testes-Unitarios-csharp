@@ -1,4 +1,4 @@
-using Estacionamento.Models;
+using Estacionamento.Modelos;
 using Xunit;
 
 namespace Estacionamento.Testes
