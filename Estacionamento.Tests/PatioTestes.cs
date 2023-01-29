@@ -1,7 +1,7 @@
 ﻿using Estacionamento.Modelos;
 using Xunit;
 
-namespace Estacionamento.Testes
+namespace Estacionamento.Tests
 {
     public class PatioTestes
     {

@@ -1,17 +1,17 @@
 using Estacionamento.Modelos;
 using Xunit;
-
+using NUnit;
 namespace Estacionamento.Testes
 {
-    public class Tests 
+    public class VeiculoTeste 
     {
         //Arrange
         //Act
         //Assert 
       
-        [Fact(DisplayName ="Teste n 1")]
-        [Trait("Funcionalidade","Acelerar")]
-        public void TestaVeiculoAcelerar()
+        [Test]
+        //[Trait("Funcionalidade","Acelerar")]
+        public void TestaVeiculoAcelerarComParametro10()
         {
             //Arrange
             var veiculo = new Veiculo();

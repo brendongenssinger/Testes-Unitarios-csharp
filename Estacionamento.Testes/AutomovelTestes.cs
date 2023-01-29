@@ -32,12 +32,12 @@ namespace Estacionamento.Testes
         }
 
 
-        [Fact]
+        [Fact ]
         public void ExibeDadosProprioAutomovelEstacionadaNoPatio()
         {
             string dados = carro.ToString();
             
-           // Assert.Contains("Tipo de Veiculo:", dados);
+           Assert.Contains("Tipo de Veiculo:", dados);
         }
     }
 }

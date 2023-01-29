@@ -80,6 +80,18 @@ namespace Estacionamento.Modelos
             return informacao;
         }
 
+        public Veiculo AlteraDados(Veiculo veiculoAlterado)
+        {
+            // Como estamos trabalhando com array de objetos,
+            // Podemos utilizar os recursos do `Linq to Objetcs` do .NET
+            var veiculoTemp = (from veiculo in this.Veiculos
+                               where veiculo.Placa == veiculoAlterado.Placa
+                               select veiculo).SingleOrDefault();
+            veiculoTemp.AlteraDadosVeiculo(veiculoAlterado);
+            return veiculoTemp;
+
+        }
+
         public Veiculo  PesquisaVeiculo(string placa)
         {
             Veiculo encontrado = (from veiculo in Veiculos
